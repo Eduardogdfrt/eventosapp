@@ -22,7 +22,7 @@ export class EventosComponent implements OnInit {
   public getEventos(): void{
     this.http.get('https://localhost:7245/api/eventos').subscribe( 
       response => this.eventos =  response,
-      error => console.log(error) );
+      error => console.log(error));
   }
 
 }
